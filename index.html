@@ -4,11 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="author" content="Virginia Rocha">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals – Virginia - Personal course page showing examples of HTML, CSS and JavaScript, including semantic structure, styles and scripts.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Virginia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script defer src="scripts/getdates.js"></script>
 </head>
 
 <body>
-    <h1>First class wdd 131</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng"
+                        target="_blank">Favorite Scripture</a></li>
+                <li><a href="#" target="_blank">Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Virginia Rocha</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="card-content">
+                <p>My name is Virginia Rocha. I live in Cochabamba, the heart of Bolivia. I'm a web
+                    development
+                    student.
+                    I
+                    have a wonderful
+                    family: my husband and two children. I love to travel and explore new places.</p>
+                <img src="images/profile.jpg" alt="Profile Picture">
+            </div>
+
+            <h3>Cochabamba, Bolivia</h3>
+
+            <div class="card-content cochabamba">
+                <figure>
+                    <img src="images/cochabamba.jpg" alt="Landscape of Cochabamba, Bolivia">
+                    <figcaption>Cochabamba, Bolivia</figcaption>
+                </figure>
+                <p>Cochabamba, the "Garden City" of Bolivia,
+                    is a fertile valley founded twice (1571, 1574), a key agricultural and industrial
+                    center,
+                    famous
+                    for
+                    its
+                    rich gastronomy
+                    and vibrant culture.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+                <li><a href="https://scrimba.com/home" target="_blank">Scrimba</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Virginia Rocha. Bolivia.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
