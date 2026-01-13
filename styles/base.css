@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #e69faf;
+    color: #ffd1e0;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -82,7 +82,7 @@ main h1 {
 }
 
 .card>h2 {
-    background-color: #2e5c85;
+    background-color: #1f3b57;
     color: #ffffff;
     text-align: center;
     padding: 0.8rem;
