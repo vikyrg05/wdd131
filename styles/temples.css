@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f4f7;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+nav ul.active {
+    max-height: 500px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #dbeafe;
+    color: #1e3a5f;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+main h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+figure {
+    background-color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #374151;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    nav ul {
+        display: flex;
+        max-height: none;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
