@@ -70,14 +70,36 @@ section p {
     margin-right: 0.5rem;
 }
 
+.desktop-emoji {
+    display: none;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
 @media (min-width: 768px) {
+    .desktop-emoji {
+        display: inline;
+    }
+
+    .climate-box h2 {
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        padding: 0.4rem 1rem;
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: var(--spacing-small);
+        margin-top: 0;
+    }
+
     .climate-box h2::after {
-        content: url(../images/day-cloudy-icon.svg);
+        content: "⛅";
         display: inline-block;
         margin-left: 0.5rem;
-        vertical-align: middle;
-        width: 24px;
-        height: 24px;
+        font-size: 1.5rem;
+        line-height: 1;
     }
 
     .data-box,
@@ -165,9 +187,8 @@ section p {
     color: var(--background-color);
     padding: 0.4rem 1.5rem;
     border-radius: 5px;
-    display: inline-block;
+    display: block;
     margin-bottom: var(--spacing-small);
-    align-self: flex-start;
     margin-top: 0;
 }
 
@@ -198,7 +219,7 @@ section p {
     .data-box,
     .climate-box {
         position: static;
-        margin-top: 1rem auto;
+        margin-top: 1rem;
         text-align: center;
         max-width: 90%;
     }
