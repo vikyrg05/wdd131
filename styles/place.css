@@ -68,7 +68,7 @@ section p {
 }
 
 @media (min-width: 768px) {
-    .climate-box h3::after {
+    .climate-box h2::after {
         content: url(../images/day-cloudy-icon.svg);
         display: inline-block;
         margin-left: 0.5rem;
@@ -131,7 +131,7 @@ section p {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.data-box h3 {
+.data-box h2 {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem 5.5rem;
@@ -157,7 +157,7 @@ section p {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.climate-box h3 {
+.climate-box h2 {
     background-color: var(--primary-color);
     color: white;
     padding: 0.4rem 1.5rem;
