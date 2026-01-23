@@ -4,6 +4,9 @@
     --accent-color: #c0392b;
     --background-color: #ffffff;
     --text-color: #333333;
+    --info-bg: #f9f9f9;
+    --black-rgba-10: rgba(0, 0, 0, 0.1);
+    --black-rgba-20: rgba(0, 0, 0, 0.2);
     --font-main: 'Arial', sans-serif;
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
@@ -20,7 +23,7 @@ body {
 
 header {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--background-color);
     padding: var(--spacing-medium);
     text-align: center;
     flex-shrink: 0;
@@ -47,8 +50,8 @@ section p {
     border-radius: 10px;
     padding: var(--spacing-medium);
     margin-bottom: var(--spacing-medium);
-    background-color: #f9f9f9;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--info-bg);
+    box-shadow: 2px 2px 8px var(--black-rgba-10);
 }
 
 .info-box ul {
@@ -128,12 +131,12 @@ section p {
     left: 1rem;
     padding: var(--spacing-medium);
     border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px var(--black-rgba-20);
 }
 
 .data-box h2 {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     padding: 1rem 5.5rem;
     border-radius: 5px;
     display: block;
@@ -154,12 +157,12 @@ section p {
     right: 1rem;
     padding: var(--spacing-medium);
     border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px var(--black-rgba-20);
 }
 
 .climate-box h2 {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     padding: 0.4rem 1.5rem;
     border-radius: 5px;
     display: inline-block;
@@ -200,7 +203,8 @@ section p {
         max-width: 90%;
     }
 
-    .data-box ul, .climate-box ul {
+    .data-box ul,
+    .climate-box ul {
         text-align: center;
         margin: 0 auto;
         padding-left: 0;
@@ -223,7 +227,7 @@ section p {
 
 footer {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--background-color);
     text-align: center;
     padding: 1rem 0;
     flex-shrink: 0;
