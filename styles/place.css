@@ -5,8 +5,8 @@
     --background-color: #ffffff;
     --text-color: #333333;
     --info-bg: #f9f9f9;
-    --black-rgba-10: rgba(0, 0, 0, 0.1);
-    --black-rgba-20: rgba(0, 0, 0, 0.2);
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(0, 0, 0, 0.2);
     --font-main: 'Arial', sans-serif;
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
@@ -51,7 +51,7 @@ section p {
     padding: var(--spacing-medium);
     margin-bottom: var(--spacing-medium);
     background-color: var(--info-bg);
-    box-shadow: 2px 2px 8px var(--black-rgba-10);
+    box-shadow: 2px 2px 8px var(--shadow-light);
 }
 
 .info-box ul {
@@ -87,6 +87,8 @@ section p {
         display: inline-flex;
         align-items: center;
         padding: 0.4rem 1rem;
+        background-color: var(--primary-color);
+        color: var(--background-color);
     }
 
     .climate-box h2::after {
@@ -148,7 +150,7 @@ section p {
     left: 1rem;
     padding: var(--spacing-medium);
     border-radius: 10px;
-    box-shadow: 2px 2px 8px var(--black-rgba-20);
+    box-shadow: 2px 2px 8px var(--shadow-dark);
 }
 
 .data-box h2 {
@@ -174,7 +176,7 @@ section p {
     right: 1rem;
     padding: var(--spacing-medium);
     border-radius: 10px;
-    box-shadow: 2px 2px 8px var(--black-rgba-20);
+    box-shadow: 2px 2px 8px var(--shadow-dark);
 }
 
 .climate-box h2 {
@@ -245,7 +247,7 @@ footer {
     background-color: var(--accent-color);
     color: var(--background-color);
     text-align: center;
-    padding: 1rem 0;
+    padding: var(--spacing-medium) 0;
     flex-shrink: 0;
 }
 
