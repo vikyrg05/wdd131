@@ -72,8 +72,8 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/320x180/anchorage-temple-lds-253274-wallpaper.jpg"
     },
     {
-        templeName: "Billing Montana",
-        location: "Billing City, Montana",
+        templeName: "Billings Montana",
+        location: "Billings City, Montana",
         dedicated: "1999, November, 20",
         area: 33800,
         imageUrl:
@@ -103,28 +103,6 @@ lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
 const gallery = document.getElementById("temples-gallery");
 
-temples.forEach((temple) => {
-    const figure = document.createElement("figure");
-
-    const img = document.createElement("img");
-    img.src = temple.imageUrl;
-    img.alt = temple.templeName;
-    img.loading = "lazy";
-
-    const caption = document.createElement("figcaption");
-    caption.innerHTML = `
-    <h3>${temple.templeName}</h3>
-    <p>Location: ${temple.location}</p>
-    <p>Dedicated: ${temple.dedicated}</p>
-    <p>Area: ${temple.area.toLocaleString()} sq ft </p>
-    `;
-
-    figure.appendChild(img);
-    figure.appendChild(caption);
-
-    gallery.appendChild(figure);
-});
-
 function displayTemples(templeArray) {
     gallery.innerHTML = "";
 
@@ -133,7 +111,7 @@ function displayTemples(templeArray) {
 
         const img = document.createElement("img");
         img.src = temple.imageUrl;
-        img.alt = temple.templeName;
+        img.alt = `Photo of ${temple.templeName} temple`;
         img.loading = "lazy";
 
         const caption = document.createElement("figcaption");
@@ -157,7 +135,7 @@ const navLinks = document.querySelectorAll("#nav-menu a");
 navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
-        const filter = link.textContent.toLowerCase();
+        const filter = link.dataset.filter;
 
         switch (filter) {
             case "old":

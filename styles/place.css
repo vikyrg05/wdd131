@@ -116,13 +116,10 @@ section p {
 #introduction {
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: visible;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
 #introduction picture,
@@ -231,6 +228,7 @@ section p {
     html,
     body {
         height: auto;
+        overflow-y: auto;
     }
 
     #introduction {
@@ -260,10 +258,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 .divider {
@@ -275,7 +271,6 @@ body {
 
 main {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    display: block;
+    overflow: visible;
 }
