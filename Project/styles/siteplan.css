@@ -5,29 +5,36 @@
 }
 
 body {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: #f5f5f5;
     color: #333333;
     line-height: 1.6;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: #0e2b0f;
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1,
 h2,
 h3 {
-    font-family: Poppins, Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     margin-bottom: 10px;
 }
 
 h1 {
     color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 h2 {
@@ -39,6 +46,7 @@ main {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 20px;
+    flex: 1;
 }
 
 section {
@@ -58,4 +66,134 @@ img {
     height: auto;
     margin: 10px 0;
     border: 1px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.image-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.image-section img {
+    width: 45%;
+}
+
+.image-container {
+    gap: 20px;
+}
+
+.interactive {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #0e2b0f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #e6f2e6;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #c5e1c5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #1976d2;
+}
+
+#formResponse {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0e2b0f;
+}
+
+@media (max-width:768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background-color: #0e2b0f;
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .image-section {
+        flex-direction: column;
+    }
+    
+    .image-section img {
+        width: 100%;
+    }
 }
