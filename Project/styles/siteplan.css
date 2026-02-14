@@ -32,18 +32,21 @@ h3 {
 }
 
 h1 {
-    color: #ffffff;
+    color: #0e2b0f;
     font-size: 2.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 h2 {
     color: #0e2b0f;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: auto;
     background-color: #ffffff;
     padding: 20px;
     flex: 1;
@@ -51,6 +54,13 @@ main {
 
 section {
     margin-bottom: 30px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section:nth-child(even) {
+    background-color: #f4f8f6;
 }
 
 ul {
@@ -140,7 +150,8 @@ form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -192,7 +203,7 @@ form button:hover {
     .image-section {
         flex-direction: column;
     }
-    
+
     .image-section img {
         width: 100%;
     }

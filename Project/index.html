@@ -19,12 +19,13 @@
 <body>
     <header>
 
-        <h1 class="logo">
+        <div class="logo">
             <img src="images/d-s-wellness-logo.webp" alt="Daily Student Wellness Logo">
-        </h1>
+            
+        </div>
 
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">☰</button>
+        
         <nav id="nav-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -36,16 +37,16 @@
     </header>
 
     <main>
+        <h1>Daily Student Wellness</h1>
 
         <section class="hero">
-            <h2>Welcome to Daily Student Wellness</h2>
-            <p>Simple habits for a healthier student life.</p>
+            <h2>Simple habits for a healthier student life.</h2>
         </section>
 
         <section class="image-section">
-            <h2>Healthy Student Lifestyle</h2>
+            <h3>Healthy Student Lifestyle</h3>
             <img src="images/d-s-wellness-1.webp" alt="Student studying calmly" loading="lazy">
-            <img src="images/d-s-wellness-2.webp" alt="Student  practicing healthy habits" loading="lazy">
+            <img src="images/d-s-wellness-2.webp" alt="Student practicing healthy habits" loading="lazy">
         </section>
 
         <section class="main-content">
@@ -66,7 +67,7 @@
         <p><a href="references.html">References</a></p>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 
 </html>
